@@ -19,6 +19,7 @@ typedef struct{
 }Save[1024];
 
 extern int ITEMS;
+extern int CAP;
 
 //Prototypes
 
@@ -29,3 +30,5 @@ void storeFile(knapsack *);
 void init();
 
 void sums(int *,int *);
+int check(knapsack *);
+int capSmallest(int, knapsack *);
